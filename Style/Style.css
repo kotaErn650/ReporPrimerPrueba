@@ -1,0 +1,127 @@
+html, body{
+    height: 100dvh;
+}
+
+:root {
+    --blanco: #faebd7;
+    --oscuro: #212121;
+    --primario: #07ff20;
+    
+    --secundario: #0097a7;
+    --gris: #757575;
+    --degradado: rgb(220, 240, 255);
+     
+  }
+
+body{
+    background-image:url(/image/fondoNegro2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+h1{
+    color: var(--oscuro);
+    font-size: 3rem;
+
+}
+header h1{
+    text-align: center;
+}
+
+
+
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(8, 2, 1);
+    background-image: url(/image/gggrain.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20PX;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.encabezado ul{
+    
+    text-align: center;    
+    font-size: 2rem;
+    padding: 2rem;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    
+}
+.encabezado ul:hover{
+    
+    transform: scale(1.02);
+    text-transform: uppercase;
+    transition:  transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: chartreuse;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+
+/*para pantallas pequeñas */ 
+
+@media(max-width :440px){
+    .encabezado{
+        flex-wrap: wrap;
+        
+    }
+
+    .encabezado ul{
+        justify-content: center;
+        font-size: 30px;
+    }
+    body{
+        background-image:url(/imagenes/fondoNegro2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+}
+@media(max-width: 680px){
+    .encabezado{
+        flex-wrap: wrap;
+        
+    }
+}
+@media (min-width: 690px) {
+    .encabezado{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
+.tabla1{
+    background-image: url(/image/TalentoTech.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.tabla1 th{
+    font-size: 2.5rem;
+    color: #000000;
+}
+td{
+    color: #000000;
+    font-size: 1.7rem;
+}
+img{
+    height: 200px;
+    width: 300px;
+}
+.td1{
+    
+    font-weight: bold;
+    font-size: 3rem;
+}
